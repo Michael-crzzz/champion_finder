@@ -55,9 +55,9 @@ async function getChampion() {
             `;
         });
         //Catches An Error If The user Didn't Input a Champion's Name
-        document.getElementById("champion-info").innerHTML = content;
+        document.getElementById("catches-error").innerHTML = content;
     } catch (error) {
-        document.getElementById("champion-info").innerHTML = `<p style="color:red;">${error.message}</p>`;
+        document.getElementById("catches-error").innerHTML = `<p style="color:red;">${error.message}</p>`;
     }
 }
 //Fetches a champion's skin
